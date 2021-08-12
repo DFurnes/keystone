@@ -8,7 +8,7 @@
     "dev": "nodemon src/app.js"
   },
   "author": "David Furnes <david@dfurnes.com>",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@slack/bolt": "^3.5.0",
     "dotenv": "^10.0.0",
