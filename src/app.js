@@ -26,8 +26,8 @@ app.command('/keystone', async ({ command, ack, respond }) => {
 
   await ack();
 
-  // Restrict which channel two-factor codes can be requested from.
-  if (channel_name !== KEYSTONE_CHANNEL) {
+  // Restrict which channel two-factor codes can be requested from (if set).
+  if (KEYSTONE_CHANNEL && channel_name !== KEYSTONE_CHANNEL) {
     return await respond(`Sorry, you can only request two-factor codes in #${KEYSTONE_CHANNEL}!`)
   }
 
