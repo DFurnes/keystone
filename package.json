@@ -1,0 +1,20 @@
+{
+  "name": "keystone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "author": "David Furnes <david@dfurnes.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@slack/bolt": "^3.5.0",
+    "dotenv": "^10.0.0",
+    "lodash": "^4.17.21",
+    "nodemon": "^2.0.12",
+    "otpauth": "^7.0.5",
+    "pluralize": "^8.0.0"
+  }
+}
